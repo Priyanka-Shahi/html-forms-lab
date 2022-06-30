@@ -9,40 +9,63 @@
 
     <h1>Company Inc.</h1>
     <h2>For all your incorporated company needs</h2>
+    <form>
 
     <!-- First, create a form tag where our inputs will be nested -->
-
-
+  
+    
       <!-- Add a label for 'fullname'-->
 
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
       <!-- Include the place holder text "Enter Name" and make this input required -->
+      <label for="fullname">Full Name:</label>
+      <input required type="text" id="fullname" name="fullname" placeholder="Enter Name">
 
 
       <!-- Add a label for 'email'-->
 
       <!-- Add a email input with the id and name attributes set to 'email' -->
       <!-- Include the place holder text "Enter Email" and make this input required -->
-
+      <label for="email">Email:</label>
+      <input required type="email" id="email" name="email"  placeholder= "Enter Email">
 
       <!-- Add a label for 'phone'-->
 
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
       <!-- Include the place holder text "Enter Telephone (optional)" -->
+      <label for="phone">Phone:</label>
+      <input type="telephone" id="phone" name="telephone" placeholder= "Enter Telephone (optional)">
+
 
 
       <!-- Add a label for 'message'-->
 
       <!-- Add a textarea tag with the id and name attributes set to 'message' -->
       <!-- Include the place holder text "Enter Message" -->
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder= "Enter Message"></textarea>
 
 
       <!-- Add a checkbox input with the id set to 'checkbox' -->
+      <p>Symptoms: (Check all that apply!)</p>
+      <p>
+    
+      <input type="checkbox" name="cold"/> Cold
+      <br>
+
+      <input type="checkbox" name="cough"/> Cough
+      <br>
+
+      <input type="checkbox" name="fever"/> fever
+
+      </p>
+      
 
 
 
       <!-- Add an input with the type set to 'submit' -->
+      <input type="submit" name="submit" value="submit">
 
-    
+    </form>
   </body>
 </html>
